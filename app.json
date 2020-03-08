@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "Blank Template",
+    "name": "WantToDo",
+    "description": "ToDo Writing App with React Native",
     "slug": "alice-project",
     "privacy": "public",
     "sdkVersion": "36.0.0",

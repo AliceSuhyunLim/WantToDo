@@ -24,7 +24,7 @@ render() {
           returnKeyType={"done"}
           autoCorrect={false}
         />
-        <ScrollView>
+        <ScrollView contentContainerStyle={styles.toDos}>
           <ToDo />
         </ScrollView>
       </View>
@@ -41,30 +41,30 @@ render() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f23657',
-    alignItems: 'center',
+    backgroundColor: "#DF27FF",
+    alignItems: "center"
   },
   title: {
-    color: 'white',
+    color: "white",
     fontSize: 20,
     marginTop: 50,
     marginBottom: 50,
-    fontWeight: '600'
+    fontWeight: "600"
   },
   card: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     flex: 1,
     width: width - 25,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     ...Platform.select({
-      ios:{
-        shadowColor:"rgb(50,50,50)",
+      ios: {
+        shadowColor: "rgb(50,50,50)",
         shadowOpacity: 0.5,
         shadowRadius: 5,
-        shadowOffset:{
+        shadowOffset: {
           height: -1,
-          width:0
+          width: 0
         }
       },
       android: {
@@ -73,9 +73,12 @@ const styles = StyleSheet.create({
     })
   },
   input: {
-    padding : 20,
+    padding: 20,
     borderBottomColor: "#bbb",
     borderBottomWidth: StyleSheet.hairlineWidth,
-    fontSize: 18
+    fontSize: 20
+  },
+  toDos: {
+    alignItems: "center"
   }
 });

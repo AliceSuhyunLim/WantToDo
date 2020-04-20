@@ -25,7 +25,7 @@ render() {
           autoCorrect={false}
         />
         <ScrollView contentContainerStyle={styles.toDos}>
-          <ToDo />
+          <ToDo text={"Hello I'm a TODO"}/>
         </ScrollView>
       </View>
     </View>
